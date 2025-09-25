@@ -1,12 +1,29 @@
 # Android Game SDK Source Inclusion
 
-Primarily including this so I don't have to fucking deal with the horrible gradle setup and can work on stuff OUTSIDE having to deal with Android Studio.
+## What's the point?
 
-## Where to Find?
+- Is your primary IDE anything other than fucking Android Studio?
+- Do you prefer primarily working in C, over C++?
+- Do you prefer not having to deal with package managers and dependency hell?
+- Do you prefer single translation unit ("Unity") builds over build system hell?
+
+Congratulations, you're in the right fucking place.
+If you think that's too much swearing, I want you to know I've earned it with the kind of pain that modern build systems and package managers have put me through.
+Anyway, basically with this library:
+- You can work outside Android Studio, because you can just include these files as rawdogged dependencies (pasted into your repo).
+- Not _everything_ works with C11, but majority of things do. Scroll down for a list of headers you can use.
+  - Also, this library (in its current state) won't free you from having to use a C++ compiler (which Android NDK ships with, btw).
+  - There are `*.cpp` source files, that'll need to be built appropriately.
+- You don't need to do CMake shenanigans just to get your code to compile+link. Just paste these files in.
+  - For an APK/AAB build, you'll obviously still need at least Gradle and have to define `androidx.appcompat:appcompat:1.6.1` and `androidx.games:games-activity:3.0.5` as dependencies.
+  - Just don't update your `CMakeLists.txt` file; you can keep it super simple.
+- Since you're pasting all the source code anyway, might as well just `#include` all the source files into your single-translation-unit (if you use one).
+
+## What's the original source?
 
 [Here!](https://android.googlesource.com/platform/frameworks/opt/gamesdk/+/b2f7b2462b6969c79f6d6999e3e62816436b3585)
 
-## How to Reimport?
+## How to update with a new version?
 
 - Select a specific commit (in this case, game-activity & game-text-input 3.0.5).
 - Include all the relevant `*.h`/`*.hpp`/`*.c`/`*.cpp` files into the project.
@@ -38,3 +55,8 @@ Following headers are NOT c11 compatible:
 - `Trace.h`
 
 > Regardless of whatever language you use, will still need C++ compiler because there are C++ source files. :'(
+
+## Next Steps
+
+Ideally, this would all be C compatible, but as it stands right now - it isn't.
+If someone wants to help with that, you're most welcome.

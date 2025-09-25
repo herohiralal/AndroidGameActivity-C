@@ -23,6 +23,22 @@ Anyway, basically with this library:
 
 [Here!](https://android.googlesource.com/platform/frameworks/opt/gamesdk/+/b2f7b2462b6969c79f6d6999e3e62816436b3585)
 
+## Example
+
+Attached an example project (bare minimum) that works fine.
+Has:
+- c/c++ files (from game activity template project)
+- CMakeLists.txt
+- MainActivity.java
+- AndroidManifest.xml
+- build.gradle
+- gradle-wrapper.properties
+- .gitignore
+- build.gradle
+- gradle.properties
+- settings.gradle
+(+ whatever gets generated)
+
 ## How to update with a new version?
 
 - Select a specific commit (in this case, game-activity & game-text-input 3.0.5).

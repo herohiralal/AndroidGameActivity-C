@@ -8,8 +8,11 @@
 - Do you prefer single translation unit ("Unity") builds over build system hell?
 
 Congratulations, you're in the right fucking place.
+
 If you think that's too much swearing, I want you to know I've earned it with the kind of pain that modern build systems and package managers have put me through.
+
 Anyway, basically with this library:
+
 - You can work outside Android Studio, because you can just include these files as rawdogged dependencies (pasted into your repo).
 - Not _everything_ works with C11, but majority of things do. Scroll down for a list of headers you can use.
   - Also, this library (in its current state) won't free you from having to use a C++ compiler (which Android NDK ships with, btw).
@@ -26,6 +29,7 @@ Anyway, basically with this library:
 ## Example
 
 Attached an example project (bare minimum) that works fine.
+
 Has:
 - c/c++ files (from game activity template project)
 - CMakeLists.txt
@@ -37,6 +41,7 @@ Has:
 - build.gradle
 - gradle.properties
 - settings.gradle
+
 (+ whatever gets generated)
 
 ## How to update with a new version?
@@ -75,4 +80,5 @@ Following headers are NOT c11 compatible:
 ## Next Steps
 
 Ideally, this would all be C compatible, but as it stands right now - it isn't.
+
 If someone wants to help with that, you're most welcome.

@@ -22,6 +22,14 @@ Anyway, basically with this library:
   - Just don't update your `CMakeLists.txt` file; you can keep it super simple.
 - Since you're pasting all the source code anyway, might as well just `#include` all the source files into your single-translation-unit (if you use one).
 
+## How to use?
+
+- Copy/submodule this into your repo.
+- Include `UnityBuild.c` into your C translation unit.
+- Include `UnityBuild.cpp` into your C++ translation unit.
+- Include any headers you might need.
+- Use.
+
 ## What's the original source?
 
 [Here!](https://android.googlesource.com/platform/frameworks/opt/gamesdk/+/b2f7b2462b6969c79f6d6999e3e62816436b3585)

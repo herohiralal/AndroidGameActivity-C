@@ -1,8 +1,0 @@
-#include "game-activity/apk_utils.cpp"
-#include "game-activity/GameActivity.cpp"
-#include "game-activity/GameActivityEvents.cpp"
-#include "game-activity/gametextinput.cpp"
-#include "game-activity/jni_helper.cpp"
-#include "game-activity/jni_wrap.cpp"
-#include "game-activity/jnictx.cpp"
-#include "game-activity/system_utils.cpp"

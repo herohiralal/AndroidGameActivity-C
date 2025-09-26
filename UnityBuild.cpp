@@ -1,3 +1,6 @@
+_Pragma("clang diagnostic push")
+_Pragma("clang diagnostic ignored \"-Weverything\"")
+
 // doing these shenanigans to avoid some redefinition warnings
 #include "game-activity/Log.h"
 #include "game-activity/system_utils.cpp"
@@ -17,3 +20,5 @@
 #include "game-activity/GameActivityEvents.cpp"
 #include "game-activity/GameActivity.cpp"
 #undef LOG_TAG
+
+_Pragma("clang diagnostic pop")

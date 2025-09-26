@@ -9,6 +9,8 @@
         "**/.hg": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "NativeLib/app/src/main/cpp/game-activity/": true
+        "NativeLib/app/src/main/cpp/game-activity/": true,
+        "NativeLib/app/src/main/cpp/GameActivitySourcesC.c": true,
+        "NativeLib/app/src/main/cpp/GameActivitySources.cpp": true
     }
 }

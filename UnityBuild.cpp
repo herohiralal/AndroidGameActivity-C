@@ -20,5 +20,17 @@ _Pragma("clang diagnostic ignored \"-Weverything\"")
 #include "game-activity/GameActivityEvents.cpp"
 #include "game-activity/GameActivity.cpp"
 #undef LOG_TAG
+#undef ALOGE
+#undef ALOGW
+#undef ALOGI
+#undef ALOGD
+#undef ALOGV
+#undef ALOGW_ONCE_IF
+#undef ALOGW_ONCE
+#undef ALOGE_ONCE
+#undef __android_second
+#undef __android_rest
+#undef android_printAssert
+#undef CONDITION
 
 _Pragma("clang diagnostic pop")
